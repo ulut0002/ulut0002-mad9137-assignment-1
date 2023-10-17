@@ -186,7 +186,7 @@
                     .cornerRadius(10)
                     .textFieldStyle(.roundedBorder)
                     .onChange(of: rgbFieldText){
-                        let sanitizedCopy = rgbFieldText.prefix(10).filter{isValidHexCharacter($0)}
+                        let sanitizedCopy = rgbFieldText.prefix(8).filter{isValidHexCharacter($0)}
                         
                         rgbFieldText = sanitizedCopy
                         
