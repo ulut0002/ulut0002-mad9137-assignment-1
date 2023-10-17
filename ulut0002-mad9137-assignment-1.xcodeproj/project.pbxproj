@@ -14,6 +14,7 @@
 		574E1C0E2AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1C0D2AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1Tests.swift */; };
 		574E1C182AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1C172AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITests.swift */; };
 		574E1C1A2AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E1C192AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITestsLaunchTests.swift */; };
+		57F2F2B82ADDE2C500E63CDC /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F2F2B72ADDE2C500E63CDC /* functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		574E1C132AD9C3BA007146C3 /* ulut0002-mad9137-assignment-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ulut0002-mad9137-assignment-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		574E1C172AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ulut0002_mad9137_assignment_1UITests.swift; sourceTree = "<group>"; };
 		574E1C192AD9C3BA007146C3 /* ulut0002_mad9137_assignment_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ulut0002_mad9137_assignment_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57F2F2B72ADDE2C500E63CDC /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		574E1BFB2AD9C3B9007146C3 /* ulut0002-mad9137-assignment-1 */ = {
 			isa = PBXGroup;
 			children = (
+				57F2F2B72ADDE2C500E63CDC /* functions.swift */,
 				574E1BFC2AD9C3B9007146C3 /* ulut0002_mad9137_assignment_1App.swift */,
 				574E1BFE2AD9C3B9007146C3 /* ContentView.swift */,
 				574E1C002AD9C3BA007146C3 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			files = (
 				574E1BFF2AD9C3B9007146C3 /* ContentView.swift in Sources */,
 				574E1BFD2AD9C3B9007146C3 /* ulut0002_mad9137_assignment_1App.swift in Sources */,
+				57F2F2B82ADDE2C500E63CDC /* functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

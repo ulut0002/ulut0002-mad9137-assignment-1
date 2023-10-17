@@ -55,3 +55,9 @@ func getRGBAColor(rgba: String) -> (UInt8,UInt8,UInt8,UInt8){
 }
 
 
+
+//source: chatGPT
+func isValidHexCharacter(_ character: Character) -> Bool {
+    let hexCharacterSet = CharacterSet(charactersIn: "0123456789ABCDEF")
+    return String(character).rangeOfCharacter(from: hexCharacterSet) != nil
+}
