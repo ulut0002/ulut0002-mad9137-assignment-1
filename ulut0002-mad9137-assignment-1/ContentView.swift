@@ -8,11 +8,11 @@
     import SwiftUI
 
     struct ContentView: View {
-        // chatGPT
+        // from: chatGPT
         @Environment(\.verticalSizeClass) var verticalSizeClass
         @Environment(\.horizontalSizeClass) var horizontalSizeClass
         
-        // State variables with initilal values
+        // State variables with initial values
         @State var red: Double = 0
         @State var green: Double = 0
         @State var blue: Double = 0
@@ -61,7 +61,8 @@
             color = Color(red: red / 255, green: green / 255, blue: blue / 255)
         }
    
-        // Main view function. Returns different views based on device orientation
+        // Main view function. 
+        // Returns different views based on device orientation
         var body: some View {
             if horizontalSizeClass == .compact && verticalSizeClass == .regular {
                 return AnyView(portraitView)
@@ -96,7 +97,8 @@
                 }.padding()
                 
             }.onAppear(){
-                handleSliderChange() // makes sure the
+                // sets the textfield value in initial load
+                handleSliderChange()
             }
          
             
@@ -125,7 +127,8 @@
                 
                 ResetButton(handleReset: handleReset)
             }.onAppear(){
-                handleSliderChange() // sets the textfield value in initial load
+                // sets the textfield value in initial load
+                handleSliderChange()
             }
             .padding(20)
         }
@@ -141,7 +144,7 @@
       
         @Binding var value: Double
         @State private var intValue : Int = 0
-        var handleSliderChange: () -> Void // Add this line
+        var handleSliderChange: () -> Void
 
         var body: some View {
             VStack{
@@ -181,7 +184,8 @@
                     .frame(width:150,height:20)
                     .textInputAutocapitalization(.characters)
                     .foregroundColor(.black)
-                    .padding()
+                    .padding(.bottom)
+                    .keyboardType(.default)
                     .background(.white)
                     .cornerRadius(10)
                     .textFieldStyle(.roundedBorder)
@@ -198,6 +202,7 @@
                         handleTextFieldChange(rgbFieldText)
                         
                     }
+                // no need for button because it automatically validates the text
 //                Button("Apply"){
 //                    handleTextFieldChange(rgbFieldTextCopy)
 //                }.disabled(isApplyButtonDisabled)
@@ -215,6 +220,7 @@
         @Environment(\.verticalSizeClass) var verticalSizeClass
 
         
+        // This variable is from chatGPT
         var size: CGFloat {
                return horizontalSizeClass == .compact && verticalSizeClass == .regular  ? 300 : 200
         }
@@ -229,6 +235,7 @@
         }
     }
 
+    // Reset button at the bottom. 
     struct ResetButton: View {
         var handleReset: () -> Void
 
